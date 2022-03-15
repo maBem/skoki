@@ -1,0 +1,975 @@
+body
+{
+    /*background-color: #303030;*/
+    background-image: url(18.jpg);
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0 !important;
+}
+
+.img-slider{
+    position: relative;
+    /*right: 300px;*/
+    margin: 0 auto;
+    /*width: auto;*/
+    height: 920px;
+   /* min-height: 80%;*/
+    margin: 10px;
+    background: #1D212B;
+  }
+  
+  .img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+  }
+  
+  .img-slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+  }
+  
+  .img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    height: 40%;
+    border-radius: 5px;
+  }
+  
+  .img-slider .slide .info{
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+  }
+  
+  .img-slider .slide .info h2{
+    color: #fff;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  
+  .img-slider .slide .info p{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .img-slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .img-slider .navigation .btn{
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .img-slider .navigation .btn.active{
+    background: #2696E9;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  
+
+#wrapper
+{
+    width: 100%;
+}
+#header
+{
+    width: 100%;
+    padding: 40px 0;
+}
+#logo
+{
+    background-image: url(img/logo3.png);
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    font-size: 48px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    /*text-align: center;*/
+}
+#menu
+{
+    width: 100%;
+    padding: 10px 0px;
+    /*background-color: #664DE1;*/
+    background-color: #a80f0f;
+    text-align: center;
+    border-top: 1px solid #4932BF;
+    border-bottom: 1px solid #4932BF;
+}
+#menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+#menu ul a
+{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+#menu ul > li
+{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px solid #4932BF;
+}
+#menu ul > li:first-child
+{
+    border-right: 1px solid #4932BF;
+}
+#menu ul > li:hover
+{
+    background-color: #806AEE;
+}
+#menu ul > li:hover > a
+{
+    color: #451717;
+}
+#menu ul > li > ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+#menu ul > li:hover > ul
+{
+    display: block;
+}
+#menu ul > li > ul > li
+{
+    background-color: #806AEE;
+    position: relative;
+    border-top: 1px solid #4932BF;
+}
+#menu ul > li > ul > li:hover
+{
+    background-color: #c34f4f; 
+}
+#content
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+#footer
+{
+    background-color: #222222;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+.sticky
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+#content h1
+{
+    text-align: center;
+    font-weight: bold;
+}
+.skocznia{
+    color:red;
+}
+#skocznie{
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+#option1
+{
+	display: block;
+}
+#option2, #option3, #option4, #option5, #option6, #option7, #option8, #option9, #option10, #option11
+{
+	display: none;
+}
+#Rio
+{
+    text-align: center;
+    background-image: url(img/rio_bravo.jpeg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#DZiB
+{
+    text-align: center;
+    background-image: url(img/dobry_zly_brzydki.jpg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#WSP
+{
+    text-align: center;
+    background-image: url(img/WsamoPoludnie.jpg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Kac
+{
+    text-align: center;
+    background-image: url(img/hangover.jpg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#kojot
+{
+    text-align: center;
+    background-image: url(img/Poranek-Kojota.jpeg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#AP
+{
+    text-align: center;
+    background-image: url(img/american_pie.jpg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Lab
+{
+    text-align: center;
+    background-image: url(img/prisoners.jpg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#DH
+{
+    text-align: center;
+    background-image: url(img/brudny_harry.jpg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#GT
+{
+    text-align: center;
+    background-image: url(img/GT2.jpg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Godfather
+{
+    text-align: center;
+    background-image: url(img/Godfather.jpg);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#plakaty
+{
+    text-align: center;
+    background-image: url(img/plakaty.jpg);
+    width: 1000px;
+    height: 474px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#style
+{
+    color: #787171;
+    font-size: 15px;
+    float: right;
+    width: 76px;
+    height: 60px;
+    margin-top: -26px;
+    margin-right: -8px;
+}
+#dark
+{
+    margin-top: -7px;
+    float: left;
+}
+#light
+{
+    margin-top: -7px;
+    float: left;
+}
+#dark a
+{
+    color: #000000;
+    text-decoration: none;
+}
+#light a
+{
+    color: #787171;
+    text-decoration: none;
+}
+#dark a:hover
+{
+    text-decoration: underline;
+}
+#light a:hover
+{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px)
+{
+#header
+    {
+        width: 100%;
+        padding: 30px 0;
+    }
+#logo
+    {
+         background-image: url(img/logo3.png);
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        font-size: 36px;
+        width: 337px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+#menu
+    {
+        width: 100%;
+        padding: 7px 0;
+        background-color: #664DE1;
+        text-align: center;
+        border-top: 1px solid #4932BF;
+        border-bottom: 1px solid #4932BF;
+    }
+#menu ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 13px;
+        height: 26px;
+        line-height: 200%;
+        display: inline-block;
+    }
+#menu ul a
+    {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+#menu ul > li
+    {
+        float: left;
+        width: 112px;
+        height: 30px;
+        border-right: 1px solid #4932BF;
+    }
+#menu ul > li:first-child
+    {
+        border-right: 1px solid #4932BF;
+    }
+#menu ul > li:hover
+    {
+        background-color: #806AEE;
+    }
+#menu ul > li:hover > a
+    {
+        color: #451717;
+    }
+#menu ul > li > ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 30px;
+        display: none;
+    }
+#menu ul > li:hover > ul
+    {
+        display: block;
+    }
+#menu ul > li > ul > li
+    {
+        background-color: #806AEE;
+        position: relative;
+        border-top: 1px solid #751b1b;
+    }
+#menu ul > li > ul > li:hover
+    {
+        background-color: #c34f4f; 
+    }
+#content
+    {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+#content h1
+    {
+        font-size: 18px;
+    }
+#content h3
+    {
+        font-size: 16px;
+    }
+#content p
+    {
+        font-size: 14px;
+    }
+#content ul
+    {
+        font-size: 14px;
+    }
+#footer
+    {
+        background-color: #222222;
+        text-align: center;
+        padding: 22px;
+        font-size: 14px;
+    }
+.sticky
+    {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+#content h1
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+#option1
+    {
+        display: block;
+    }
+#option2, #option3, #option4, #option5, #option6, #option7, #option8, #option9, #option10, #option11
+    {
+        display: none;
+    }
+#plakaty
+{
+    text-align: center;
+    background-image: url(img/plakaty.jpg);
+    width: 600px;
+    height: 284px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Rio
+{
+    text-align: center;
+    background-image: url(img/rio_bravo.jpeg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#DZiB
+{
+    text-align: center;
+    background-image: url(img/dobry_zly_brzydki.jpg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#WSP
+{
+    text-align: center;
+    background-image: url(img/WsamoPoludnie.jpg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Kac
+{
+    text-align: center;
+    background-image: url(img/hangover.jpg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#kojot
+{
+    text-align: center;
+    background-image: url(img/Poranek-Kojota.jpeg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#AP
+{
+    text-align: center;
+    background-image: url(img/american_pie.jpg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Lab
+{
+    text-align: center;
+    background-image: url(img/prisoners.jpg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#DH
+{
+    text-align: center;
+    background-image: url(img/brudny_harry.jpg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#GT
+{
+    text-align: center;
+    background-image: url(img/GT2.jpg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Godfather
+{
+    text-align: center;
+    background-image: url(img/Godfather.jpg);
+    width: 500px;
+    height: 280px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+    #style
+{
+    color: #787171;
+    font-size: 12px;
+    float: right;
+    width: 76px;
+    height: 60px;
+    margin-top: -20px;
+    margin-right: -20px;
+    text-align: center;
+}
+#dark
+{
+    margin-left: 7px;
+    margin-top: -7px;
+    float: left;
+}
+#light
+{
+    margin-top: -7px;
+    float: left;
+}
+#dark a
+{
+    color: #000000;
+    text-decoration: none;
+}
+#light a
+{
+    color: #787171;
+    text-decoration: none;
+}
+#dark a:hover
+{
+    text-decoration: underline;
+}
+#light a:hover
+{
+    text-decoration: underline;
+}
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    #header
+    {
+        width: 100%;
+        padding: 20px 0;
+    }
+    #logo
+    {
+         background-image: url(img/logo3.png);
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        font-size: 24px;
+        width: 225px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #menu
+    {
+        width: 100%;
+        padding: 5px 0;
+        height: 15px;
+        background-color: #664DE1;
+        text-align: center;
+        border-top: 1px solid #4932BF;
+        border-bottom: 1px solid #4932BF;
+    }
+    #menu ul
+    {
+        margin: -5px;
+        padding: 0;
+        list-style: none;
+        font-size: 7px;
+        height: 25px;
+       /* line-height: 100%; */
+        display: inline-block;
+    }
+    #menu ul a
+    {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+    #menu ul > li
+    {
+        float: left;
+        width: 60px;
+        height: 15px;
+    }
+    /*#menu ul > li:first-child
+    {
+
+    }*/
+    #menu ul > li:hover
+    {
+        background-color: #806AEE;
+    }
+    #menu ul > li:hover > a
+    {
+        color: #451717;
+    }
+    #menu ul > li > ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 20px;
+        display: none;
+    }
+    #menu ul > li:hover > ul
+    {
+        display: block;
+    }
+    #menu ul > li > ul > li
+    {
+        background-color: #806AEE;
+        position: relative;
+        border-top: 1px solid #4932BF;
+    }
+    #menu ul > li > ul > li:hover
+    {
+        background-color: #c34f4f; 
+    }
+    #content
+    {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+    #content h1
+    {
+            font-size: 12px;
+    }
+    #content h3
+    {
+            font-size: 10px;
+    }
+    #content p
+    {
+            font-size: 8px;
+    }
+    #content ul
+    {
+            font-size: 8px;
+    }
+    #footer
+    {
+        background-color: #222222;
+        text-align: center;
+        padding: 15px;
+        font-size: 8px;
+    }
+    .sticky
+    {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+    #content h1
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+    #option1
+    {
+        display: block;
+    }
+    #option2, #option3, #option4, #option5, #option6, #option7, #option8, #option9, #option10, #option11
+    {
+        display: none;
+    }
+    #plakaty
+    {
+        text-align: center;
+        background-image: url(img/plakaty.jpg);
+        width: 350px;
+        height: 165px;
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #Rio
+    {
+        text-align: center;
+        background-image: url(img/rio_bravo.jpeg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #DZiB
+    {
+        text-align: center;
+        background-image: url(img/dobry_zly_brzydki.jpg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #WSP
+    {
+        text-align: center;
+        background-image: url(img/WsamoPoludnie.jpg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Kac
+    {
+        text-align: center;
+        background-image: url(img/hangover.jpg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #kojot
+    {
+        text-align: center;
+        background-image: url(img/Poranek-Kojota.jpeg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #AP
+    {
+        text-align: center;
+        background-image: url(img/american_pie.jpg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Lab
+    {
+        text-align: center;
+        background-image: url(img/prisoners.jpg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #DH
+    {
+        text-align: center;
+        background-image: url(img/brudny_harry.jpg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #GT
+    {
+        text-align: center;
+        background-image: url(img/GT2.jpg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Godfather
+    {
+        text-align: center;
+        background-image: url(img/Godfather.jpg);
+        width: 300px;
+        height: 168px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        #style
+{
+    color: #787171;
+    font-size: 6px;
+    float: right;
+    width: 37px;
+    height: 20px;
+    margin-top: -12px;
+    margin-right: -12px;
+    text-align: center;
+}
+#dark
+{
+    margin-left: 4px;
+    margin-top: -2px;
+    float: left;
+}
+#light
+{
+    margin-top: -2px;
+    float: left;
+}
+#dark a
+{
+    color: #000000;
+    text-decoration: none;
+}
+#light a
+{
+    color: #787171;
+    text-decoration: none;
+}
+#dark a:hover
+{
+    text-decoration: underline;
+}
+#light a:hover
+{
+    text-decoration: underline;
+}
+}
