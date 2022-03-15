@@ -37,35 +37,35 @@
 
     <div class="img-slider">
       <div class="slide active">
-        <img src="17.jpg" alt="">
+        <img src="images/17.jpg" alt="">
         <div class="info">
         <!--  <h2>Slide 01</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
         </div>
       </div>
       <div class="slide">
-        <img src="14.jpg" alt="">
+        <img src="images/14.jpg" alt="">
         <div class="info">
          <!-- <h2>Slide 02</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
         </div>
       </div>
       <div class="slide">
-        <img src="20.jpg" alt="">
+        <img src="images/20.jpg" alt="">
         <div class="info">
         <!--  <h2>Slide 03</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
         </div>
       </div>
       <div class="slide">
-        <img src="12.jpg" alt="">
+        <img src="images/12.jpg" alt="">
         <div class="info">
      <!--     <h2>Slide 04</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
         </div>
       </div>
       <div class="slide">
-        <img src="11.jpg" alt="">
+        <img src="images/11.jpg" alt="">
         <div class="info">
       <!--   <h2>Slide 05</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
